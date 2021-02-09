@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+.flex-item-1 {
+    background-color: #b1f3df;
+    padding: 10px;
+    flex: 20%;
+    border: 2px solid rgba(3, 3, 1, 0.452);
+    margin: 2%;
+  }
+
+  .flex-item-2 {
+    background-color: #b1f3df;
+    padding: 10px;
+    flex: 20%;
+    margin: 2%;
+    border: 2px solid rgba(3, 3, 1, 0.452);
+  }
+  .flex-item-3 {
+    background-color: #b1f3df;
+    padding: 10px;
+    flex: 20%;
+    margin: 2%;
+    border: 2px solid rgba(3, 3, 1, 0.452);
+  }
+  .flex-item-4 {
+    background-color: #b1f3df;
+    padding: 10px;
+    flex: 20%;
+    border: 2px solid rgba(3, 3, 1, 0.452);
+    margin: 2%;
+  }
+  .flex-item-5{
+    background-color: #b1f3df;
+    padding: 10px;
+    margin: 2%;
+    flex: 20%;
+    border: 2px solid rgba(3, 3, 1, 0.452);
+  }
+ 
+  .divinline{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+ p{
+   
+  font-family: 'Patrick Hand', cursive;
+
+ }
+  .qstn input button{
+    
+      padding: 2%;
+  }
+  mat-button-toggle{
+    font-size: larger;
+    margin-left: 8%;
+    width: 12vw;
+    background-color: rgb(120, 248, 70);
+    border-radius: 15%;
+  }
+  mat-button-toggle-group{
+    border: none;
+  }
+  .mat-button-toggle-checked{
+    background-color: rgb(112, 45, 156);
+    color: white;
+  }
+  .qstn p{
+    font-size: 24px;
+    padding: 1%;
+    margin-top: 2%;
+    
+    
+  }
+  .btns{
+    font-family: 'Princess Sofia', cursive;
+    font-size: xx-large;
+    background-color:rgb(112, 45, 156) ;
+    color: white;
+    margin-top: 2%;
+  }
+  .page-wrap{
+    background-color: rgba(255, 255, 255, 0.979);
+    /* border-radius: 20%; */
+    margin: 5%;
+  }
+  form{
+   margin-left: 15%;
+   
+  }
+  h1{
+    padding-top: 2%;
+    font-family: 'Princess Sofia', cursive;
+    text-align: center;
+    font-size: xx-large;
+    
+  }

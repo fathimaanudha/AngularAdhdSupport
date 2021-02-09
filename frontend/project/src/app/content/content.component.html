@@ -1,0 +1,95 @@
+
+
+<div id="page-wrap">
+    <h2>Edit/Add Contents</h2>
+    
+     <form (ngSubmit)="update()">
+      <input type="text" name="title" required placeholder="Enter Title" [(ngModel)]="adhItem.title" required>
+         <br>
+         
+         <br>              
+           <textarea name="main" id="" placeholder="Enter Main Para" [(ngModel)]="adhItem.main" required></textarea>     
+          <br> 
+         
+        <input type="text" name="image"  placeholder="imageUrl" [(ngModel)]="adhItem.image" required><br>
+         
+         <br> 
+
+         <br> 
+         
+         <input type="text" name="subtitle1"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle1"><br>
+          
+         <br>              
+         <textarea name="subpara1" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara1" ></textarea>     
+        <br> 
+        <br> 
+         
+        <input type="text" name="image1"  placeholder="imageUrl" [(ngModel)]="adhItem.image1" ><br>
+         
+         <br> 
+        <br> 
+         
+         <input type="text" name="subtitle2"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle2"><br>
+          
+         <br>              
+         <textarea name="subpara2" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara2" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle3"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle3"><br>
+          
+         <br>              
+         <textarea name="subpara3" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara3" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle4"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle4"><br>
+          
+         <br>              
+         <textarea name="subpara4" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara4" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle5"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle5"><br>
+         <br> 
+         <br>              
+         <textarea name="subpara5" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara5" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle6"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle6"><br>
+          
+         <br>              
+         <textarea name="subpara6" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara6" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle7"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle7"><br>
+          
+         <br>              
+         <textarea name="subpara8" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara8" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle9"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle9"><br>
+          
+         <br>              
+         <textarea name="subpara9" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara9" ></textarea>     
+        <br> 
+        <br> 
+         
+         <input type="text" name="subtitle10"  placeholder="Subtitle here" [(ngModel)]="adhItem.subtitle10"><br>
+          
+         <br>              
+         <textarea name="subpara10" id="" placeholder="Paragraph" [(ngModel)]="adhItem.subpara10" ></textarea>     
+        <br> 
+          
+
+
+
+
+
+
+       <button class="btn btn-lg btn-primary btn-block" type="submit" id="btn1" [disabled]="!adhItem.title|| !adhItem.main || !adhItem.image" style="font-family: 'Henny Penny', cursive;" >Continue</button>
+  </form>         
+  </div>     

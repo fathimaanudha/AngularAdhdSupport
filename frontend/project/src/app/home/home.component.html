@@ -1,0 +1,54 @@
+<ngb-carousel
+[showNavigationArrows]="true" 
+[showNavigationIndicators]="true"
+interval="5000"
+[keyboard]="true"
+[pauseOnHover]="true"
+[wrap]="true"
+[activeId]="'secondSlide'"
+>
+
+    <ng-template ngbSlide class="img">
+      <div class="picsum-img-wrapper">
+        <img src="https://wallpaperaccess.com/full/1265270.jpg" alt="Angular Carousel 2">
+      </div>
+      <div class="carousel-caption">
+        <h3>Do you feel your child is acting different than others???</h3>
+      
+      </div>
+    </ng-template>
+    <ng-template ngbSlide class="img">
+      <div class="picsum-img-wrapper">
+        <img src="https://i.pinimg.com/originals/52/e6/f7/52e6f786a609cf6e9da5dd70f2305dbf.jpg" alt="Angular Carousel 2">
+      </div>
+      <div class="carousel-caption picsum-img-wrapper">
+        <h3>Is it hard for you to to handle your child?</h3>
+        
+      </div>
+    </ng-template>
+   
+    
+    <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://i.pinimg.com/originals/c3/3d/a4/c33da42cc7269ade5ce37bb08f6b5441.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+          <h3>Is it difficult for your child to concentrate on things?</h3>
+         
+        </div>
+      </ng-template>
+      <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://c4.wallpaperflare.com/wallpaper/221/505/111/hands-paint-children-happiness-wallpaper-preview.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+          <h3>What do you think the reason is?</h3>
+         
+        </div>
+      </ng-template>
+     
+    
+  </ngb-carousel>
+<div>
+    <button class="btn btn-lg" routerLink="cquiz">Take the Test</button>
+</div>

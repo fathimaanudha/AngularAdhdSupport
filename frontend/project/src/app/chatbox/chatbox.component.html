@@ -1,0 +1,50 @@
+<div *ngIf="_auth.loggedIn()" class="main">
+    <div class="left">
+      <button *ngIf="_auth.loggedIn()" routerLink="/articles">Articles</button>
+  <br>
+      <button *ngIf="_auth.loggedIn()" routerLink="/solutions">Remedies</button>
+  <br>
+      <button *ngIf="_auth.loggedIn()" routerLink="/videos">Videos</button>
+ 
+
+  </div>
+
+  <div id="chat-applicaton" class="right" *ngIf="!_auth.loggedInAdmin()">
+    <h2>Make new Friends here</h2>
+    <div id="chat-window">
+      <!-- show previous -->
+      <div id="output" *ngFor="let chat of chat">
+        <p>
+          <strong id="name">{{chat.user}} 
+           </strong>
+          <br>{{chat.message}}</p>
+
+      </div>
+      <!-- current chat -->
+      <div id="output" *ngFor="let data of output">
+          <p><strong id="name">{{data.handle}}  </strong>
+            <br>{{data.message}}</p>
+      </div>
+      <div id="feedback">
+        <p>{{feedback}}</p>
+      </div>
+    </div>
+    <input id="handle" type="text"  placeholder="{{userName}}" [(ngModel)]="chatItem.user" disabled/>
+    <input id="message" type="text" [(ngModel)]="message"  [(ngModel)]="chatItem.message"placeholder="Message" autocomplete="off"
+      (keypress)="messageTyping()" />
+      <button id="send" style="cursor: pointer;" (click)="sendMessage();addnew()" [disabled]="!message">Send</button>
+      
+
+    </div>
+
+    <div *ngIf="_auth.loggedInAdmin()" class="noti">
+     
+      <div>
+       
+        <input id="notification" type="text" [(ngModel)]="noti" [(ngModel)]="chatItem.noti" placeholder="Send Notification" autocomplete="off"/>
+      </div>
+      <button type="button" id="alert" style="cursor: pointer;" [disabled]="!noti" (click)="alert();addNoti()">Notify</button>
+
+    </div>
+</div>
+

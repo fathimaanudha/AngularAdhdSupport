@@ -1,0 +1,28 @@
+<div class="container">
+    <div  mat-dialog-content>
+        <div  *ngIf="!result" class="res">
+            Your score seems fine, You dont have to worry about ADHD!!!
+            <br>
+            Still, we are happy to welcome if you want to be a part of us.
+            <br>
+    
+    
+        </div>
+        <div *ngIf="result" class="res">
+           Your score indicates your child seems to have ADHD..
+           <br>
+            But dont worry,we are here to help and support you...
+            <br>
+           Let's fight it together... 
+           <br>
+           
+    
+        </div>
+    
+    </div>
+    <div mat-dialog-actions class="btn">
+        <button mat-button  id="bt2" (click)="cancel()"><a href="/signup">Click here to Join</a> </button>
+        <button mat-button id="bt3" (click)="cancel()">Cancel</button>
+       
+      </div>
+</div>

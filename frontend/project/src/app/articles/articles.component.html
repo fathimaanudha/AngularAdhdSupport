@@ -1,0 +1,36 @@
+<div *ngIf="_auth.loggedIn()" class="main">
+    <div class="left">
+    <br>
+        <button *ngIf="_auth.loggedIn()" routerLink="/solutions">Remedies</button>
+    <br>
+        <button *ngIf="_auth.loggedIn()" routerLink="/videos">Videos</button>
+    <br>
+        <button *ngIf="_auth.loggedIn()" routerLink="/chat">ChatBox</button>
+    <br>
+    <div>
+        <button *ngIf="_auth.loggedInAdmin()" id="btn1"  class="btn btn-lg" [routerLink]="['/article/new']">ADD NEW ARTICLE</button>
+    </div>
+    
+
+    </div>
+    <div class="wrapper right">
+        <div class="container">
+          
+            <div class="grid" *ngFor= 'let adh of adhd'>
+             
+                
+                <div class="grid-item a"  [ngStyle]="{'background': ' url(' + adh.image + ')','background-size': 'cover','background-position': 'center',
+                'background-repeat': 'no-repeat'
+              }">
+    
+                  <div class="demo d1"> <a [routerLink]="['/articles',adh._id]">{{adh.title}}</a></div>
+                </div>          
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+</div>

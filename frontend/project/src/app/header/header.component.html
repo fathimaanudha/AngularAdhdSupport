@@ -1,0 +1,18 @@
+
+
+<div>
+ 
+    <ul>
+        <a routerLink="" *ngIf="!_auth.loggedIn()">Home</a>
+        <a routerLink="/cwelcome" *ngIf="_auth.loggedIn()">Home</a>
+        <a routerLink="signup" *ngIf="!_auth.loggedIn()">signup</a>
+        <a routerLink="login" *ngIf="!_auth.loggedIn()">login</a>
+        <a routerLink="cwelcome" *ngIf="_auth.loggedIn() && !_auth.loggedInAdmin()" (click)="openDialog()">Notifications</a>
+        <a  routerLink="logout" *ngIf="_auth.loggedIn()" (click)="logoutUser()" class="right">Logout</a>
+
+
+    </ul>
+    
+ 
+    
+</div>

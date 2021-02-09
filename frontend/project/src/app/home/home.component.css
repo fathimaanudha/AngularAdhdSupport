@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+.mydiv{
+    border: 5px solid red;
+    background-color: yellowgreen;
+}
+button{
+    font-family: 'Princess Sofia', cursive;
+    font-size: xx-large;
+background-color: rgba(222, 219, 233, 0.979);
+border: 3px solid rgb(9, 0, 128);
+color: blue;
+width: 30%;
+margin-left: 34%;
+position: fixed;
+bottom: 10px;
+}
+button:hover{
+    background-color: rgb(28, 0, 128);
+    border: 3px solid white;
+}
+
+.btn:hover{
+    color: white;
+    text-decoration: none;
+}
+ngb-carousel {
+    /* border: 2px solid black; */
+    /* background-color: rgba(54, 63, 63, 0.473); */
+    max-width: 70%;
+   border-radius: 2%;
+    margin: 15px auto;
+}
+
+ngb-carousel img {
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+    outline: none;
+   margin: 2.5%;
+   margin-left: 9.9%;
+    
+  /* Add the blur effect */
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+  
+   border-radius: 2%;
+}
+
+/* ngb-carousel {
+    width: inherit;
+    height: inherit;
+} */
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    z-index: -1;
+}
+
+.carousel-item.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+     z-index: 20;
+}
+
+
+.carousel-control-next {
+     z-index: 20;
+}
+
+.carousel-indicators{
+    z-index: 20;
+}
+.carousel-caption {
+    color: rgb(12, 7, 58);
+    /* background-color: rgba(245, 238, 238, 0.795); */
+    /* border-top: 2px solid black; */
+    /* border-bottom: 2px solid black; */
+    margin-left: 1%;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 25%;
+    position: absolute;
+    border-radius: 2%;
+    font-size: larger;
+}
+h3{
+    font-family: 'Princess Sofia', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    /* position: absolute; */
+}

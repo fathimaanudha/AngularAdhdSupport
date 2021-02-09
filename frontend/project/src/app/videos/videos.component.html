@@ -1,0 +1,33 @@
+<div *ngIf="_auth.loggedIn()" class="main">
+    <div class="left">
+        <button *ngIf="_auth.loggedIn()" routerLink="/articles">Articles</button>
+    <br>
+        <button *ngIf="_auth.loggedIn()" routerLink="/solutions">Remedies</button>
+    <br>
+        <button *ngIf="_auth.loggedIn()" routerLink="/chat">ChatBox</button>
+    <br>
+        <div  *ngIf="_auth.loggedInAdmin()" >
+            <button id="btn1" class="btn btn-lg" [routerLink]="['/video/new']">ADD NEW VIDEO</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="video right" *ngFor= "let video of videos" >
+  
+            <youtube-player 
+                videoId={{video.videoUrl}} 
+                suggestedQuality="highres" 
+                [height]="250" 
+                [width]="500" 
+                [startSeconds]="4"
+                >
+            </youtube-player>
+            <h2>{{video.name}}</h2>
+        </div>
+        
+    </div>
+
+    
+    
+    
+</div>

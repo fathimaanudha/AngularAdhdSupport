@@ -1,0 +1,113 @@
+
+<div class="a" *ngIf="_auth.loggedIn()">
+    <button *ngIf="_auth.loggedIn()" routerLink="/articles">Articles</button>
+
+    <button *ngIf="_auth.loggedIn()" routerLink="/solutions">Remedies</button>
+
+    <button *ngIf="_auth.loggedIn()" routerLink="/videos">Videos</button>
+
+    <button *ngIf="_auth.loggedIn()" routerLink="/chat">ChatBox</button>
+    
+    <button *ngIf="_auth.loggedIn() && !_auth.loggedInAdmin()" (click)="openDialog()">Contact Psychologist</button>
+</div>
+<div *ngIf="_auth.loggedIn()">
+<h3 class="headng">You are not alone...</h3>
+
+  <ngb-carousel
+[showNavigationArrows]="true" 
+[showNavigationIndicators]="true"
+interval="3000"
+[keyboard]="true"
+[pauseOnHover]="true"
+[wrap]="true"
+[activeId]="'secondSlide'"
+>
+    <ng-template ngbSlide class="img">
+      <div class="picsum-img-wrapper">
+        <img src="https://s8.favim.com/orig/141130/childhood-cute-emma-watson-harry-potter-Favim.com-2275818.jpg">
+      </div>
+      <div class="carousel-caption">
+        <h1>EMMA WATSON</h1>
+        <h3>Best known for her role as the iconic character of Hermione Granger in the globally successful “Harry Potter” films.</h3>
+        
+      </div>
+    </ng-template>
+   
+    <ng-template ngbSlide class="img">
+      <div class="picsum-img-wrapper">
+        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/celebrities_with_adhd_slideshow/getty_rm_simone_biles.jpg" alt="Angular Carousel 2">
+      </div>
+      <div class="carousel-caption">
+          <h1>SIMONE BILES</h1>
+        <h3>U.S. Olympic champion Simone Biles took to Twitter to let the world know she has ADHD. The gymnastics powerhouse, who won the all-around Gold at the 2016 Rio Olympics, says she’s had it since she was a kid.</h3>
+       
+      </div>
+    </ng-template>
+    <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/celebrities_with_adhd_slideshow/getty_rm_photo_of_michael_phelps.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+        <h1 style="text-transform:uppercase;">Michael Phelps</h1>
+          <h3>When this future Olympic champion was diagnosed with ADHD at age 9, his mom was his champion. If he didn’t want to read, she gave him the sports page from the newspaper. She encouraged him to swim, which he says helped him develop concentration and self-discipline. He has 22 Olympic medals -- the most of any athlete in history.</h3>
+         
+        </div>
+      </ng-template>
+      <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/celebrities_with_adhd_slideshow/getty_rm_photo_of_justin_timberlake.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+        <h1 style="text-transform: uppercase;">Justin Timberlake</h1>
+          <h3>Some celebrities with ADHD say the condition has contributed to their success. Others say they've dealt with challenges. Grammy-winning singer and actor Timberlake says: "I have OCD mixed with ADD. You try living with that."</h3>
+         
+        </div>
+      </ng-template>
+
+      <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://www.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+        <h1 style="text-transform: uppercase;">Leonardo da Vinci</h1>
+          <h3>Leonardo da Vinci was the ultimate multi-hyphenate. Based on what’s known about his work practices and behavior, a study from King’s College in London has revealed that da Vinci likely had ADHD. Maybe that was the secret behind his genius, or what the Mona Lisa was smiling about.</h3>
+         
+        </div>
+      </ng-template>
+
+      <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://www.shethepeople.tv/wp-content/uploads/2017/09/agatha-christie-e1505461541415.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+        <h1 style="text-transform: uppercase;">Agatha Christie</h1>
+          <h3>Agatha Christie proved that a good mystery never goes out of style. Her books have outsold both the Bible and the works of Shakespeare! Dubbed “The Queen of Crime,” Christie is thought to have had dysgraphia, a learning disorder that impacts penmanship, spelling, and math. She didn’t let this stop her, instead she dictated all of her work.</h3>
+         
+        </div>
+      </ng-template>
+     
+      <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://www.thesun.co.uk/wp-content/uploads/2016/12/nintchdbpict0000009167901.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+        <h1 style="text-transform: uppercase;">Walt Disney</h1>
+          <h3>The man behind Mickey Mouse, Walt Disney was a visionary ahead of his time. He is also thought to have had ADHD due to his struggles in school. This of course did not stop the innovative entrepreneur from achieving his dreams. He went on to create the most magical empire in the world!</h3>
+         
+        </div>
+      </ng-template>
+    
+      <ng-template ngbSlide class="img">
+        <div class="picsum-img-wrapper">
+          <img src="https://www.biography.com/.image/t_share/MTY2NTIzNTAyNjgwMDg5ODQy/pablo-picasso-at-his-home-in-cannes-circa-1960-photo-by-popperfoto_getty-images.jpg" alt="Angular Carousel 3">
+        </div>
+        <div class="carousel-caption">
+        <h1 style="text-transform: uppercase;">Pablo Picasso</h1>
+          <h3>Spanish painter Pablo Picasso is thought to have had dyslexia. Thankfully, he found an outlet in art. He made presenting objects backward and out of order totally hip. Picasso went on to create powerful pieces that showcased his unique view of the world.</h3>
+         
+        </div>
+      </ng-template>
+  </ngb-carousel>
+
+</div>
+

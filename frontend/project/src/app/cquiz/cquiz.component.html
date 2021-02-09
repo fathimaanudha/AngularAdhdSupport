@@ -1,0 +1,41 @@
+<div class="page-wrap">
+    <h1>
+        Answer these questions
+     
+    </h1>
+    
+        <!-- Form starts -->
+    <form #myForm="ngForm" >
+        <div class="qstn" *ngFor = 'let question of questions; index as i;'>
+            <div class="custom-control custom-radio" id="{{'id'+i}}">
+                <p class="qstn">{{i+1}}. {{question.question}}</p>
+                <div class="divinline">
+    
+                    <mat-button-toggle-group >
+                        <mat-button-toggle value="a"   (click)="op1()" >{{question.option1}}</mat-button-toggle >
+                        <mat-button-toggle value="a" (click)="op2()">{{question.option2}}</mat-button-toggle>
+                        <mat-button-toggle value="a" (click)="op3()">{{question.option3}}</mat-button-toggle>
+                        <mat-button-toggle value="a" (click)="op4()">{{question.option4}}</mat-button-toggle>
+                        <mat-button-toggle value="a"(click)="op5()">{{question.option5}}</mat-button-toggle>
+                        
+                      </mat-button-toggle-group>
+                  
+                        
+                </div>
+                
+    
+            </div>
+               
+          
+                
+            
+            
+        </div>
+   
+     </form>
+     
+     <button   type="submit" class="btn btns btn-lg btn-block"  (click)='submit()'>Check your scores</button>
+</div>
+
+  
+

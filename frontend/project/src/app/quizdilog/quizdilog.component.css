@@ -1,0 +1,22 @@
+.container{
+    background-color: rgb(158, 108, 238);
+    margin: 2%;
+    color: rgb(233, 233, 235);
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+    margin: 2%;
+    position: absolute;
+    bottom: 33%;
+
+}
+.res{
+    height: auto;
+    padding: 2%;
+    font-size: larger;
+    line-height: 1.5 px;
+}
+
+

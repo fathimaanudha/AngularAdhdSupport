@@ -1,0 +1,51 @@
+
+<div mat-dialog-content>
+  
+    <button id="bt1" *ngIf="!show2" (click)="talk()">Talk to Doctor</button>
+    <button id="bt1" *ngIf="!show1" (click)="visit()">Make an Appointment</button>
+</div>
+
+
+  <div *ngIf="show1" class="cont">
+     <p>call:9876543210
+         <br>
+         email:abc@gmail.com
+     </p>
+
+
+  </div>
+  <div *ngIf="show2" class="cont">
+    <mat-form-field appearance="fill">
+      
+      <input matInput placeholder="Your Name here" [(ngModel)]="name" required>
+      <br>
+      <input matInput name="mobileNumber" placeholder="Phone Number" [pattern]="mobNumberPattern" #mobNumber="ngModel" [(ngModel)]="phone" required>
+      <div *ngIf="mobNumber.errors && userForm.submitted && !isValidFormSubmitted" [ngClass] = "'error'">  
+        <div *ngIf="mobNumber.errors.pattern">  
+          Mobile number not valid.  
+        </div>   
+      </div> 
+      <br>
+
+      
+      <input matInput [matDatepicker]="picker" [min]="minDate" [matDatepickerFilter]="myFilter" placeholder="Select date" [(ngModel)]="date" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <br>
+    <h3>Select Covenient Time-slot</h3>
+    <mat-button-toggle-group>
+      <mat-button-toggle value="9:00-10:00"  (click)="time1()" >9:00-10:00</mat-button-toggle >
+      <mat-button-toggle value="10:00-11:00" (click)="time2()">10:00-11:00</mat-button-toggle>
+      <mat-button-toggle value="11:00-12:00" (click)="time3()">11:00-12:00</mat-button-toggle>
+      
+    </mat-button-toggle-group>
+    <br>
+    <button (click)="proceed()" [disabled]="!name || !phone || !date">Proceed</button>
+
+</div>
+<div mat-dialog-actions class="btn">
+    <button id="bt2" mat-button (click)="cancel()">Cancel</button>
+    <button id="bt3" mat-button *ngIf="show1 || show2" (click)="back()">Back</button>
+   
+  </div>

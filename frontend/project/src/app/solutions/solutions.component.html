@@ -1,0 +1,36 @@
+<div *ngIf="_auth.loggedIn()" class="main">
+  <div class="left">
+      <button *ngIf="_auth.loggedIn()" routerLink="/articles">Articles</button>
+ 
+  <br>
+      <button *ngIf="_auth.loggedIn()" routerLink="/videos">Videos</button>
+  <br>
+      <button *ngIf="_auth.loggedIn()" routerLink="/chat">ChatBox</button>
+ <br>
+ <div *ngIf="_auth.loggedInAdmin()">
+  <button  id="btn1" class="btn btn-lg" [routerLink]="['/solution/new']">ADD NEW REMEDY</button>
+</div>
+ 
+
+  </div>
+
+<div class="wrapper right">
+    <div class="container">
+      <!-- yoga -->
+        <div class="grid" *ngFor='let solution of solutions'>
+          <div class="grid-item a" [ngStyle]="{'background': ' url(' + solution.image + ')','background-size': 'cover','background-position': 'center',
+          'background-repeat': 'no-repeat'
+        }">
+                
+            <div class="demo d1"><a [routerLink]="['/solution',solution._id]">{{solution.title}}</a></div>
+          </div>
+      
+     
+
+            
+            
+        </div>
+    </div>
+</div>
+  
+</div>

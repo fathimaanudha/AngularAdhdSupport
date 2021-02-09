@@ -1,0 +1,205 @@
+<div class="container" [ngStyle]="{'background': ' url(' + solItem.image + ')'
+}">
+  <button class="btn1 btn-md" *ngIf="_auth.loggedIn()" routerLink="/solutions">Back</button>
+    <div class="box">
+        <h1>{{solItem.title}}</h1>
+
+    </div>
+    <div class="box">
+        <p>{{solItem.description}}</p>
+
+    </div>
+  <ngb-carousel
+      [showNavigationArrows]="true" 
+      [showNavigationIndicators]="true"
+      [keyboard]="true"
+      [pauseOnHover]="true"
+      [wrap]="true"
+      [activeId]="'secondSlide'"
+      >
+    <ng-template ngbSlide class="name" *ngIf="solItem.image1">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name1}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image1>
+        <mat-card-content>
+          <p>
+           {{solItem.description1}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image2">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name2}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image2>
+        <mat-card-content>
+          <p>
+           {{solItem.description2}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image3">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name3}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image3>
+        <mat-card-content>
+          <p>
+           {{solItem.description3}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image4">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name4}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image4>
+        <mat-card-content>
+          <p>
+           {{solItem.description4}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image5">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name5}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image5>
+        <mat-card-content>
+          <p>
+           {{solItem.description5}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image6">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name6}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image6>
+        <mat-card-content>
+          <p>
+           {{solItem.description6}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image7">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name7}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image7>
+        <mat-card-content>
+          <p>
+           {{solItem.description7}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image8">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name8}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image8>
+        <mat-card-content>
+          <p>
+           {{solItem.description8}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image9">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name9}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image9>
+        <mat-card-content>
+          <p>
+           {{solItem.description9}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+    <ng-template ngbSlide class="name" *ngIf="solItem.image10">
+      <mat-card class="example-card" >
+        <mat-card-header>
+        
+          <mat-card-title>{{solItem.name10}}</mat-card-title>
+          
+          </mat-card-header>
+        <img mat-card-image [src]=solItem.image10>
+        <mat-card-content>
+          <p>
+           {{solItem.description10}}
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+      
+    </ng-template>
+
+    </ngb-carousel>
+
+
+
+    
+
+
+  </div>
+
+
+<div class="button" *ngIf="_auth.loggedInAdmin()">
+    <button  class="btn btns btn-lg btn-block"><a [routerLink]="['/solutions/contents',id]" >Add/ Edit Contents</a></button>
+    
+    <button  class="btn btns btn-lg btn-block" (click)="delete(sol)">Delete This Section</button>
+</div>

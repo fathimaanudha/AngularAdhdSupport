@@ -1,0 +1,48 @@
+
+<div class="container" [ngStyle]="{'background': ' url(' + adhItem.image + ')','background-size': 'cover','background-position': 'center',
+'background-repeat': 'no-repeat'
+}">
+    <div class="box">
+        <h1>{{adhItem.title}}</h1>
+        <div class="main">
+            <p>{{adhItem.main}}</p>
+        </div>
+        <div class="sub">
+            <h2>{{adhItem.subtitle1}}</h2>
+            <p>{{adhItem.subpara1}}</p>
+            <h2>{{adhItem.subtitle2}}</h2>
+            <p>{{adhItem.subpara2}}</p>
+
+            <h2>{{adhItem.subtitle3}}</h2>
+            <p>{{adhItem.subpara3}}</p>
+            <h2>{{adhItem.subtitle4}}</h2>
+            <p>{{adhItem.subpara4}}</p>
+
+            <h2>{{adhItem.subtitle5}}</h2>
+            <p>{{adhItem.subpara5}}</p>
+            <h2>{{adhItem.subtitle6}}</h2>
+            <p>{{adhItem.subpara6}}</p>
+
+            <h2>{{adhItem.subtitle7}}</h2>
+            <p>{{adhItem.subpara7}}</p>
+            <h2>{{adhItem.subtitle8}}</h2>
+            <p>{{adhItem.subpara8}}</p>
+            <h2>{{adhItem.subtitle9}}</h2>
+            <p>{{adhItem.subpara9}}</p>
+            <h2>{{adhItem.subtitle10}}</h2>
+            <p>{{adhItem.subpara10}}</p>
+
+
+
+        </div>
+
+    
+<button *ngIf="_auth.loggedIn()" routerLink="/articles">Back</button>
+    </div>
+    
+
+</div>
+<div class="button" *ngIf="_auth.loggedInAdmin()">
+    <button class="btn btns btn-lg btn-block"><a [routerLink]="['/articles/contents',id]" >Add/ Edit Contents</a></button>
+    <button  class="btn btns btn-lg btn-block" (click)="delete(article)">Delete</button>
+</div>

@@ -1,0 +1,16 @@
+
+<div id="page-wrap">
+    <h2>Add New</h2>
+    
+     <form (ngSubmit)="addnew()">
+      <input type="text" name="title" required placeholder="Enter Title" [(ngModel)]="solItem.title" required>
+         <br>
+         
+         
+         
+        <input type="text" name="image"  placeholder="imageUrl" [(ngModel)]="solItem.image" required><br>
+         
+         <br> 
+       <button class="btn btn-lg btn-primary btn-block" type="submit" id="btn1" [disabled]="!solItem.title|| !solItem.image" style="font-family: 'Henny Penny', cursive;" >Add</button>
+  </form>         
+  </div>     

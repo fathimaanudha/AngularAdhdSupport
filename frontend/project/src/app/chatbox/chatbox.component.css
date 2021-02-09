@@ -1,0 +1,119 @@
+
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #000000;
+}
+
+#chat-applicaton{
+    max-width: 700px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+
+#chat-window{
+    width: 30vw;
+    height: 300px;
+    overflow: auto;
+    background: #f9f9f9;
+}
+/* #output{
+    border: 2px solid rgb(68, 5, 97);
+} */
+#output p{
+    padding: 14px 0px 0 0;
+    margin: 0 20px;
+    /* border-bottom: 1px solid #e9e9e9; */
+    color: rgb(32, 4, 58);
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #440992;
+    font-size: large;
+    padding: 2px;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    font-family: 'Single Day', cursive;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 2px solid rgb(59, 52, 52);
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+p #name{
+    font-family: 'Single Day', cursive;
+ width: 100px;
+ /* border: 2px solid black; */
+ color: rgb(77, 0, 128);
+}
+button{
+    font-family: 'Single Day', cursive;
+    background: #2edda3;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #0ee28a;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+  }
+  .left{
+    background-color: rgba(2, 1, 1, 0.507);
+    width: 20%;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 2%;
+    
+  }
+  .left button{
+    margin: 2%;
+    width: 90%;
+    text-align: center;
+    height: 12%;
+  }
+  .right{
+   
+    margin: auto;
+  
+  }
+  .noti{
+      margin: 5%;
+  }

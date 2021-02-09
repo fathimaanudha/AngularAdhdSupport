@@ -1,0 +1,34 @@
+*{
+    font-family: 'Single Day', cursive;
+}
+#bt1{
+    width: 100%;
+    padding: 2%;
+    margin-top: 1%;
+}
+
+
+.btn{
+    text-align: center;
+    margin: 2%;
+    position: absolute;
+    bottom: 80px;
+
+}
+.cont{
+    border: 2px solid maroon;
+    margin: 2%;
+    padding: 2%;
+    /* width: 200px; */
+    height: 200px;
+    border-radius: 4%;
+}
+
+  
+  .group {
+    display: -ms-inline-grid;
+  }
+ button{
+     background-color: rgb(226, 190, 190);
+     color: rgb(0, 0, 0);
+ }

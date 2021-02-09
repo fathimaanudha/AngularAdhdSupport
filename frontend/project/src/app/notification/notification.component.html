@@ -1,0 +1,8 @@
+<div class="box" *ngIf="_auth.loggedIn()">
+    <ul *ngFor ="let noti of output">
+        <li><button class="btn btn-lg" id="btn" >{{noti.noti}}</button></li>
+    </ul>
+
+    <button class="btn btn-md" id="cl"  (click)="close()">Close</button>
+
+</div>

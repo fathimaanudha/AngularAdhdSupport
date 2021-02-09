@@ -1,0 +1,11 @@
+
+/* override bootstrap styles */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+     background-image: url(https://uaemoms.com/wp-content/uploads/2019/06/many-kids-climbing-up-rope_1308-2794.jpg);
+background-repeat:repeat-x ; 
+}

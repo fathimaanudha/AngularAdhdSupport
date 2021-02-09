@@ -1,0 +1,19 @@
+
+<div id="page-wrap">
+    <h2>Add New</h2>
+    
+     <form (ngSubmit)="addnew()">
+      <input type="text" name="title" required placeholder="Enter Title" [(ngModel)]="adhItem.title" required>
+         <br>
+         
+         <br>              
+           <textarea name="main" id="" placeholder="Enter Main Para" [(ngModel)]="adhItem.main" required></textarea>     
+          <br> 
+         
+        <input type="text" name="image"  placeholder="imageUrl" [(ngModel)]="adhItem.image" required><br>
+         
+         <br> 
+       <button class="btn btn-lg btn-primary btn-block" type="submit" id="btn1" [disabled]="!adhItem.title|| !adhItem.main || !adhItem.image" style="font-family: 'Henny Penny', cursive;" >Add</button>
+  </form>         
+  </div>     
+z

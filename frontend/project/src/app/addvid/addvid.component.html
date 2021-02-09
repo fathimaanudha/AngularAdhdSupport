@@ -1,0 +1,17 @@
+
+
+<div id="page-wrap">
+    <h2>Add Video</h2>
+    
+     <form (ngSubmit)="addnew()">
+      <input type="text" name="title" required placeholder="Enter Title" [(ngModel)]="vidItem.name" required>
+         <br>
+         
+         
+         
+        <input type="text" name="video"  placeholder="videoUrl" [(ngModel)]="vidItem.videoUrl" required><br>
+         
+         <br> 
+       <button class="btn btn-lg btn-primary btn-block" type="submit" id="btn1" [disabled]="!vidItem.name|| !vidItem.videoUrl" style="font-family: 'Henny Penny', cursive;" >Add</button>
+  </form>         
+  </div>  

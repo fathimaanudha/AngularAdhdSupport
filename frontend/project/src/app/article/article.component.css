@@ -1,0 +1,47 @@
+*{
+    font-family: 'Single Day', cursive;
+}
+.box{
+    font-family: 'Single Day', cursive;
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(250, 248, 245, 0.856);
+}
+h1{
+    font-family: 'Single Day', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size:xx-large;
+}
+.main{
+    font-family: 'Single Day', cursive;
+    font-size: large;
+    text-align: center;
+    font-style: italic;
+    
+}
+.sub h2{
+    text-decoration: underline;
+}
+.btns{
+    display: inline;
+    grid-template-columns:repeat(2, 1fr);
+    background-color: blueviolet;
+    color: white;
+    width: 30%;
+    margin: 2%;
+    height: 52px;
+    text-align: center;
+    align-items: center;
+   
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+   
+    text-align: center;
+}
+.button{
+    text-align: center;
+    
+}
